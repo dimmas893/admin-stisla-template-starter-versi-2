@@ -15,7 +15,8 @@
             <li><a class="nav-link" href="index.html">Ecommerce Dashboard</a></li>
           </ul>
         </li> --}}
-            <li><a class="nav-link" href="{{ route('user') }}"><i class="far fa-square"></i>User</a>
+            <li class="nav-item {{ request()->is('user') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('user') }}"><i class="far fa-square"></i>User</a>
             </li>
         </ul>
 
